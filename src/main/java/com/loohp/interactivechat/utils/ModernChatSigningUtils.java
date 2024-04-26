@@ -151,14 +151,14 @@ public class ModernChatSigningUtils {
     }
 
     public static void detectRateSpam(Player player, String message) {
-        nmsDetectRateSpamMethod.setAccessible(true);
+/*        nmsDetectRateSpamMethod.setAccessible(true);
         try {
             Object nmsEntityPlayer = craftPlayerGetHandleMethod.invoke(player);
             Object nmsPlayerConnection = nmsPlayerConnectionField.get(nmsEntityPlayer);
             nmsDetectRateSpamMethod.invoke(nmsPlayerConnection, message);
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     public static int getChatMessageType(Object chatMessageTypeB) {
